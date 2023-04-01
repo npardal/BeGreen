@@ -31,28 +31,29 @@ struct NavigationBar: View {
                 HomePage()
                     .tabItem {
                         Image(systemName: "house.fill")
-                        Text("Home")
+                        
                     }
                     .tag(0)
                 
                 Plant()
                     .tabItem {
                         Image(systemName: "leaf")
-                        Text("Plant")
+                           
+                        
                     }
                     .tag(1)
                 
                 Profile()
                     .tabItem {
                         Image(systemName: "person.crop.circle")
-                        Text("Profile")
+                       
                     }
                     .tag(2)
                 
             }
+                .accentColor(CustomColor.turquoise)
             .background(CustomColor.background)
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationTitle("BeGreel")
+            
       
         }      .background(CustomColor.background)
     }

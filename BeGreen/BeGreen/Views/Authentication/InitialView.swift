@@ -15,8 +15,9 @@ struct InitialView: View {
                     VStack{
                         //MARK: Title
                         Spacer()
-                        Text("BeGreel.")
+                        Text("BeTreel.")
                             .font(.custom("AvenirLTStd-Black", size: 70))
+                            .padding(.bottom, 1)
                         Text("interact sustainably")
                             .font(.custom("AvenirLTStd-Roman", size: 14))
                        

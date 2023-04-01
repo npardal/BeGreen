@@ -9,7 +9,30 @@ import SwiftUI
 
 struct HomePage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { geometry in
+            ZStack{
+                VStack(alignment: .center){
+                    Text("BeGreel")
+                        .multilineTextAlignment(.center)
+                        .font(.custom("AvenirLTStd-Roman", size: 17))
+                        .padding(.top, 20)
+                    
+                    HStack {
+                        Text("Morning, Nicole👋")
+                            .font(.custom("AvenirLTStd-Black", size: 33))
+                            .frame(maxWidth:.infinity, alignment: .leading)
+                            .padding(.top, 20)
+                            .padding(.leading, 20)
+                        
+                        Spacer()
+                    }
+                   
+                    
+                    Spacer()
+                }.frame(width: geometry.size.width, height: geometry.size.height)
+                    .background(CustomColor.background)
+            }
+        }
     }
 }
 

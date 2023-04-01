@@ -11,6 +11,7 @@ import SwiftUI
 struct CustomColor {
     static let turquoise = Color("darkBlue")
     static let background = Color("background")
+    static let yellow = Color("yellow")
    
     // Add more here...
 }
