@@ -2,6 +2,8 @@
 BeReal X Forest (the sustainable version) 
 Tech stack: SwiftUI, Firebase, React.js, Node.js, Python (Turtle.py, time.py)
 
+https://devpost.com/software/begreen-goe5rj
+
 
 ### The features 
 Introducing BeGreen -> the BeReal X Forest spinoff, for sustainability! Post a photo everyday of your doing sustainable tasks, and begin a streak with your friends and grow your plant from a sapling to a tree. Everytime your tree grows, a real tree is planted! Populate your forest! If you miss a day, you loose your streak, and your plant dies. We used a python ML model too, to expand each day you show up and die when you miss a day :) 
