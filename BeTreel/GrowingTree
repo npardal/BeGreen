@@ -1,0 +1,62 @@
+import turtle
+import time
+
+# Create a turtle to draw the plant
+pen = turtle.Turtle()
+
+# Set the pen color and speed
+pen.color('green')
+pen.speed(0)
+
+# Define the initial length of the stem
+stem_length = 20
+
+# Draw the stem of the plant
+pen.left(90)
+pen.forward(stem_length)
+
+# Define the number of leaves
+num_leaves = 5
+
+# Draw the leaves of the plant
+for i in range(num_leaves):
+    pen.right(360 / num_leaves)
+    pen.forward(stem_length / 2)
+    pen.backward(stem_length / 2)
+
+# Update the screen and wait for a short time
+turtle.update()
+time.sleep(1)
+
+# Grow the plant by increasing the stem length
+stem_length += 20
+
+# Clear the old plant
+pen.clear()
+
+# Draw the new plant with the longer stem
+pen.left(90)
+pen.forward(stem_length)
+for i in range(num_leaves):
+    pen.right(360 / num_leaves)
+    pen.forward(stem_length / 2)
+    pen.backward(stem_length / 2)
+
+# Update the screen and wait for a short time
+turtle.update()
+time.sleep(1)
+
+# Repeat the growth process to create an animation
+stem_length += 20
+pen.clear()
+pen.left(90)
+pen.forward(stem_length)
+for i in range(num_leaves):
+    pen.right(360 / num_leaves)
+    pen.forward(stem_length / 2)
+    pen.backward(stem_length / 2)
+turtle.update()
+time.sleep(1)
+
+# Close the turtle window when finished
+turtle.done()
